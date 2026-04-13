@@ -1,42 +1,47 @@
+import { gameDevItems, graphicDesignItems, webDevItems } from "./data.js";
+
 const root = "./";
 
 const sections = [
     {
-        id: "webDev",
-        name: "Web Development",
+        id: "clientWork",
+        class: "one",
+        name: "client work",
+        desc: "The stuff I did for other people",
         href: `${root}webDevelopment/index.html`
     },
     {
-        id: "gameDev",
-        name: "Game Development",
-        href: `${root}gameDevelopment/index.html`
+        id: "personalProjects",
+        class: "two",
+        name: "personal projects",
+        desc: "The stuff I did for fun",
+        href: `${root}graphicDesign/index.html`
     },
     {
         id: "about",
-        name: "About",
+        class: "three",
+        name: "about",
+        desc: "The stuff you need to know about me",
         href: `${root}about/index.html`
-    },
-    {
-        id: "contact",
-        name: "Contact",
-        href: `${root}contact/index.html`
     },
 ]
 
-const sectionLinks = document.querySelector(".sections");
+injectSections();
 
-addSections();
-
-function addSections() {
-    let buttons = sections.map((section) => {
-        const { id, name, href } = section;
-
-        return `<a class="sectionLink" id="${id}" href="${href}">
-                    <p>
-                    ${name}
-                    </p>
-                </a>`
+function injectSections() {
+    const sects = document.querySelector('.sections');
+    let blocks = sections.map((sect) => {
+        return `
+        <a class="sectionLink" href="${sect.href}">
+            <div class="section ${sect.class} mute" id="${sect.id}">
+                <h2>${sect.name}</h2>
+                <p class="sectDesc">
+                    ${sect.desc}
+                </p>
+            </div>
+        </a>`
     }).join("");
 
-    sectionLinks.innerHTML = buttons;
+    sects.innerHTML = blocks;
 }
+

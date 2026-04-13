@@ -1,17 +1,18 @@
 import { gameDevItems } from "./data.js";
 
-const itemsSection = document.querySelector('.gameDevItemsContainer');
+const varsityItemsSection = document.querySelector('.varsityItemsSection');
 
 addWebItems();
 
 function addWebItems() {
-    let items = gameDevItems.map((item) => {
-            return `<a class="gameDevItem" id="${item.id}" href="../gameDevelopment/gamePortfolioItem.html?id=${item.id}">
+    let varsityItems = gameDevItems.map((item) => {
+            return `<a class="gameDevItem" id="${item.id}" href="../gameDevelopment/webPortfolioItem.html?id=${item.id}">
+                    <section class="itemVis">
                         <img src="${item.img}" alt="Front Page image of the ${item.name} project."/>
-                        <p>${item.name}</p>
-                        <p class="statusReport">${item.status}</p>
-                    </a>`
+                        <p class="desc">${item.name}</p> 
+                    </section>                
+                </a>`
         }).join("");
     
-        itemsSection.innerHTML = items;
+        varsityItemsSection.innerHTML = varsityItems;
 }

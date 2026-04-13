@@ -1,175 +1,218 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
-
-h1 {
-    font-family: "Alegreya Sans SC", sans-serif;
-    font-weight: 400;
-    font-size: 48px;
-}
-
-.homepageHolder {
-    margin-top: 8rem;
-    animation: transIn 0.75s;
-}
-
-.homepageMainContent {
+.homePageContainer {
     display: flex;
-    justify-content: center;
-    padding: 0 10rem;
+    flex-direction: row;
 }
 
-.profilePhotoHolder {
-    flex: 1;
+.splashScreen {
+    flex: 2;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 8%;
 }
 
-.profilePhoto {
-    width: 50%;
-    height: auto;
-    border-radius: 100%;
-    border: 0.3rem solid #F58A07;
-    box-shadow: 3px 3px 3px #191a19;
-    margin-left: 30%;
-    margin-top: 5%;
-}
-
-.creatorInfo {
-    flex: 1;
-}
-
-.description {
-    background: linear-gradient(#087E8B, #087E8B) padding-box,
-              linear-gradient(to right, #F58A07, #F26419) border-box;
-    border-radius: 2rem;
-    border: 3px solid transparent;
-    width: 70%;
-    font-size: 28px;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    position: relative;
-    box-shadow: 3px 3px 3px #191a19;
-}
-
-.sections {
-    display: flex;  
-    flex-flow: row wrap;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
-}
-
-.sectionLink {
-    font-family: "Alegreya Sans SC", sans-serif;
-    text-decoration: none;
-    color: #f0eff4;
-    font-size: 25px; 
-    text-wrap: wrap;
-    flex: 1;
+.splashScreenText {
+    font-family: 'Pally', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 0.3;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    background-color: #087E8B;
-    margin-right: 2.5rem;
-    margin-left: 2.5rem;
-    margin-bottom: 2rem;
-    width: fit-content;
-    padding: 2rem;
-    border-radius: 10rem;
-    box-shadow: 5px 5px 2px #191a19;
     position: relative;
-    align-content: center;
-    transition: transform, background-color, 200ms ease-in-out;
+    animation: transIn 1s ease;
 }
 
-.sectionLink:hover {
-    transform: translateY(-10px);
-    background-color: #F26419;
+#bubble {
+    position: absolute;
+    animation: float 10s forwards;
+    z-index: -1;
+}
+
+.bubbleGradDarkTeal {
+    stop-color: var(--dark-teal);
+}
+
+.bubbleCircDarkTeal {
+    stroke: var(--dark-teal);
+}
+
+.bubbleHighDarkTeal {
+    stroke: var(--dark-teal);
+}
+
+.bubbleGradDarkOrange {
+    stop-color: var(--dark-orange);
+}
+
+.bubbleCircDarkOrange {
+    stroke: var(--dark-orange);
+}
+
+.bubbleHighDarkOrange {
+    stroke: var(--dark-orange);
+}
+
+.bubbleGradDarkLightOrange {
+    stop-color: var(--light-orange);
+}
+
+.bubbleCircDarkLightOrange {
+    stroke: var(--light-orange);
+}
+
+.bubbleHighDarkLightOrange {
+    stroke: var(--light-orange);
+}
+
+.bubbleGradLightTeal {
+    stop-color: var(--light-teal);
+}
+
+.bubbleCircLightTeal {
+    stroke: var(--light-teal);
+}
+
+.bubbleHighLightTeal {
+    stroke: var(--light-teal);
+}
+
+.bubbleGradLight {
+    stop-color: var(--light-color);
+}
+
+.bubbleCircLight {
+    stroke: var(--light-color);
+}
+
+.bubbleHighLight {
+    stroke: var(--light-color);
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px, -500px);
+        opacity: 0;
+    }
+}
+
+.mouseIcon {
+    position: absolute;
+    left: 48%;
+    animation: transIn 1s ease;
+    z-index: -1;
+}
+
+.scrollWheel {
+    stroke-dasharray: 5;    
+    animation: scroll 2.5s infinite;
+}
+
+@keyframes scroll {
+    to {
+        stroke-dashoffset: -10;
+    }
 }
 
 @keyframes transIn {
     from {
         opacity: 0;
-        scale: 0.5;
+        transform: translate(0px, 10px);
     }
 
     to {
         opacity: 1;
-        scale: 1;
+        transform: translate(0px, 0px);
     }
 }
 
-@media (max-width: 1720px) {
-    h1 {
-        font-size: 40px;
-    }
-
-    .description {
-        font-size: 22px;
-    }
+.sectDesc {
+    font-family: 'CabinetGrotesk', sans-serif;
+    margin: 0;
+    font-size: 28px;
+    padding: 1rem;
+    text-align: center;
 }
 
-@media (max-width: 1310px) {
-    h1 {
-        font-size: 35px;
-    }
-
-    .profilePhoto {
-        margin-top: 15%;
-    }
-
-    .description {
-        font-size: 18px;
-    }    
-
-    .sectionLink {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        padding: 1rem;
-    }
+.sections {
+    flex: 1;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
 }
 
-@media (max-width: 1000px) {
-    h1 {
-        text-align: center;
-    }
-
-    .homepageHolder {
-        margin-top: 5rem;
-    }
-
-    .homepageMainContent {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    .profilePhotoHolder {
-        text-align: center;
-    }
-
-    .profilePhoto {
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .creatorInfo {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .description {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .sections {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        margin-bottom: 3rem;
-    }
+.section {
+    flex: 1;
+    width: 30rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.452) 0px 3px 8px;
+    transition: transform ease-in-out 0.1s;
 }
 
-@media (max-width: 590px) {
-    .homepageHolder {
-        margin-top: 3rem;
-    }
+.section:hover {
+    transform: scale(1.02);
+}
+
+.section h2 {
+    color: #EDF6F9;
+    font-size: 60px;
+    margin: 0;
+    text-align: center;
+}
+
+.one {
+    background-color: var(--dark-teal);
+}
+
+.two {
+    background-color: var(--dark-orange);
+}
+
+.three {
+    background-color: var(--light-teal);
+}
+
+.sectionLink {
+    color: #EDF6F9;
+    font-size: 36px;
+    font-family: 'Pally', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.projectList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.project {
+    color: var(--light-color);
+    font-size: 40px;
+    width: 100%;
+    line-height: 0.3;
+}
+
+.projectImage {
+    background-color: var(--light-color);
+    width: 80%;
+    height: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.452) 0px 3px 8px;
 }

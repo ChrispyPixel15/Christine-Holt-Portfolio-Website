@@ -18,6 +18,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
+    color: #323232;
 }
 
 .pageDes {
@@ -29,7 +30,7 @@ h2 {
     font-size: 24px;
 }
 
-.gameDevItemsContainer {
+.graphicDesignItemsContainer {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -43,7 +44,7 @@ h2 {
     margin-right: auto;
 }
 
-.gameDevItem {
+.graphicDesignItem {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
@@ -62,7 +63,7 @@ h2 {
     width: 100%; height: 0%;
     left: 0;
     top: 0;
-    background-color: var(--light-teal);
+    background-color: var(--dark-orange);
     border-radius: 2rem;
     transition: height .2s ease;
 }

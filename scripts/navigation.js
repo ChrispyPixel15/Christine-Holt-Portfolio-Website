@@ -1,11 +1,9 @@
 const root = "../";
 
 const navigationMenu = [
-    {name: "Home", href: `${root}index.html`},
-    {name: "Web Development", href: `${root}webDevelopment/index.html`},
-    {name: "Game Development", href: `${root}gameDevelopment/index.html`},
-    {name: "About", href: `${root}about/index.html`},
-    {name: "Contact", href: `${root}contact/index.html`},
+    {name: "client work", href: `${root}graphicDesign/index.html`},
+    {name: "personal projects", href: `${root}webDevelopment/index.html`},
+    {name: "about", href: `${root}about/index.html`},
 ];
 
 const navList = document.querySelector(".navigationLinks");

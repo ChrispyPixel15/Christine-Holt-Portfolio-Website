@@ -1,279 +1,132 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
-
 h1 {
-    font-family: "Alegreya Sans SC", sans-serif;
-    font-weight: 400;
-    font-size: 48px;
+    font-family: 'Pally', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 0.3;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-bottom: 8rem;
     text-align: center;
-    margin-top: 5rem;
-    animation: transIn 0.5s;
 }
 
 h2 {
-    font-family: "Alegreya Sans SC", sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    text-align: left;
-    animation: transIn 0.5s;
-    flex: 100%;
-    border: 2px dashed #F26419;
-    border-radius: 1rem;
-    background-color: #f2651949;
-    max-width: fit-content;
-    padding: 10px;
-}
-
-.name {
-    border: none;
-    background-color: #2a2b2a;
-}
-
-.text {
-    font-size: 18px;
-}
-
-.aboutContentContainer {
-    margin-top: 3rem;  
+    font-family: 'Pally', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 0.3;
     margin-left: auto;
-    margin-right: auto;   
-    display: flex;
-    width: 50%;
-    flex-flow: row wrap;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    padding-bottom: 5rem;
-    animation: transIn 0.5s;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #323232;
 }
 
-.personalContent {
+h3 {
+    font-family: 'Pally', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 0.3;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
+    color: #323232;
+}
+
+.aboutMe {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 50%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.personalContent div {
-    flex: 1;
-}
-
-.infoContainer {
-    background: linear-gradient(#087E8B, #087E8B) padding-box,
-              linear-gradient(to right, #F58A07, #F26419) border-box;
-    border-radius: 2rem;
-    border: 3px solid transparent;
-    padding: 2rem;
-    font-size: 18px;
+.photoHolder {
+    flex: 40%;
 }
 
 .photo {
     width: 80%;
-    height: auto;
-    border-radius: 100%;
-    border: 0.3rem solid #F58A07;
-    box-shadow: 3px 3px 3px #191a19;
-    margin-top: 10%;
+    border-radius: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.452) 0px 3px 8px;
 }
 
-.skillsContent {
+.paragraphAboutMe {
+    flex: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5rem;
+}
+
+.paragraphAboutMe p {
+    width: 100%;
+}
+
+.aboutMe p {
+    font-size: 24px;
+    font-weight: 500;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2rem;
-    width: 100%;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    border: 2px dashed #087E8B;
-    border-radius: 1rem;
-    background-color: #087e8b7c;
-    margin-top: 3rem;
-    padding: 0px 2rem;
 }
 
-.skillsLayout {
+.workWithMe {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.workWithMe p {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.process {
     display: flex;
-    flex-flow: row wrap;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-.skillClass {
-    width: 33%;
-}
-
-.heading {
-    font-weight: 400;
-    font-size: 22px;
-    font-family: "Alegreya Sans SC", sans-serif;
-    
-}
-
-.skillItem {
-    position: relative;
-    font-size: 18px;
-    padding-left: 20px;
-}
-
-.skillItem::before {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    left: 0;
-    top: 20%;
-    background-color: #087E8B;
+    background-color: #edf6f942;
+    box-shadow: rgba(0, 0, 0, 0.452) 0px 3px 8px;
     border-radius: 2rem;
-    border: 2px solid #F58A07;
+    padding: 2rem;
 }
 
-.educationContent {
+.step {
+    max-width: 45%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2rem;
-    width: 100%;
-    padding-left: 6rem;
-    padding-right: 6rem;
-     padding-bottom: 1rem;
-    padding-top: 1rem;
-    border: 2px dashed #087E8B;
-    border-radius: 1rem;
-    background-color: #087e8b7c;
-    margin-top: 3rem;
-    padding: 0px 2rem;
 }
 
-.eduSection {
+.moreAboutMe p {
+    width: 60%;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.moreAboutMe {
+    margin-top: 5rem;
+}
+
+.somePhotos {
     display: flex;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.eduHeading {
-    font-weight: 400;
-    font-size: 22px;
-    font-family: "Alegreya Sans SC", sans-serif;
-    width: 50%;
-    position: relative;
-}
-
-.eduHeading::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 200%;
-    border: 1px dashed #087E8B;
-}
-
-.eduYear {
-    font-weight: 400;
-    font-size: 22px;
-    font-family: "Alegreya Sans SC", sans-serif;
-    width: 50%;
-    text-align: right;
-}
-
-.eduItem {
-    position: relative;
-    font-size: 18px;
-    padding-left: 20px;
-}
-
-.eduItem::before {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    left: 0;
-    top: 15%;
-    background-color: #087E8B;
-    border-radius: 2rem;
-    border: 2px solid #F58A07;
-}
-
-.workContent {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
-     padding-bottom: 1rem;
-    padding-top: 1rem;
-    border: 2px dashed #087E8B;
-    border-radius: 1rem;
-    background-color: #087e8b7c;
+    justify-content: space-between;
+    margin-bottom: 5rem;
     margin-top: 3rem;
-    padding: 0px 2rem;
 }
-.interestContent {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
+
+.hikePhotoOne {
+    width: 20%;
     border-radius: 2rem;
-    border: 3px solid transparent;
-    padding-left: 6rem;
-    padding-right: 6rem;
-     padding-bottom: 1rem;
-    padding-top: 1rem;
-    border: 2px dashed #087E8B;
-    border-radius: 1rem;
-    background-color: #087e8b7c;
-    margin-top: 3rem;
-    padding: 0px 2rem;
+    box-shadow: rgba(0, 0, 0, 0.452) 0px 3px 8px;
 }
 
-@keyframes transIn {
-    from {
-        opacity: 0;
-        scale: 0.5;
-    }
-
-    to {
-        opacity: 1;
-        scale: 1;
-    }
-}
-
-@media (max-width: 1720px) {
-    .photo {
-        margin-top: 20%;
-    }
-}
-
-@media (max-width: 1310px) {
-    .personalContent {
-        flex-direction: column;
-    }
-
-    .photoHolder {
-        text-align: center;
-    }
-    
-    .photo {
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-}
-
-@media (max-width: 1000px) {
-    .skillsLayout {
-        flex-direction: column;
-        align-content: flex-start;
-    }
-}
-
-@media (max-width: 700px) {
-    .aboutContentContainer {
-        width: 95%;
-    }
-    
+.hikePhotoTwo {
+    width: 75%;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.452) 0px 3px 8px;
 }

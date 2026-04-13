@@ -1,17 +1,19 @@
 import { webDevItems } from "./data.js";
 
-const itemsSection = document.querySelector('.webDevItemsContainer');
+const varsityItemsSection = document.querySelector('.varsityItemsSection');
 
 addWebItems();
 
 function addWebItems() {
-    let items = webDevItems.map((item) => {
+    let varsityItems = webDevItems.map((item) => {
         return `<a class="webDevItem" id="${item.id}" href="../webDevelopment/webPortfolioItem.html?id=${item.id}">
-                    <img src="${item.img}" alt="Front Page image of the ${item.name} project."/>
-                    <p>${item.name}</p>
-                    <p class="statusReport">${item.status}</p>
-                </a>`
+                    <section class="${item.num}">
+                        <img src="${item.img}" alt="Front Page image of the ${item.name} project."/>
+                        <p class="desc">${item.name}</p> 
+                    </section>                
+                </a>
+                `
     }).join("");
 
-    itemsSection.innerHTML = items;
+    varsityItemsSection.innerHTML = varsityItems;
 }
