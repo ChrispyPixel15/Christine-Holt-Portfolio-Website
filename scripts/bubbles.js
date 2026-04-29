@@ -32,7 +32,7 @@ const colours = [
 ];
 
 const sizes = ["20mm", "30mm", "40mm", "50mm", "60mm"];
-const positions = ["5%", "10%", "20%", "30%", "40%", "50%"];
+const positions = ["20%", "30%", "40%", "50%", "60%", "70%", "80%"];
 
 const splashScreen = document.querySelector(".splashScreen");
 
@@ -60,7 +60,7 @@ function generateBubbles() {
     const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     svg.setAttribute('id', 'bubble')
     svg.setAttribute('width', sizes[randomInt(0, 4)]);
-    svg.setAttribute('style', `left: ${positions[randomInt(0, 5)]}`);
+    svg.setAttribute('style', `left: ${positions[randomInt(0, 6)]}`);
     svg.setAttribute('version', '1.1');
     svg.setAttribute('viewBox', '0 0 210 297');
     g.setAttribute('stroke', '#000');

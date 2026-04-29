@@ -9,6 +9,8 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles/mainStyles.css">
     <link rel="stylesheet" href="styles/indexStyles.css">
+    <link rel="stylesheet" href="../styles/webDevStyles.css">
+    <link rel="stylesheet" href="../styles/aboutStyles.css">
     <script type="module"> import { navigationBar } from "./scripts/navigation.js" 
         navigationBar("Home")</script>
 </head>
@@ -26,26 +28,71 @@
                 </g>
             </svg>
         </a>
-        <nav class="navigation">
-            <section class="navigationLinksHolder" id="navLinks">
-                <article class="navigationLinks"></article>
-            </section>
-        </nav>
     </header>
     <section class="homePageContainer">
         <article class="splashScreen">
             <p class="splashScreenText">hello! i'm chris.</p>
             <p class="splashScreenText">i design things...</p>
-            <!-- <svg class="mouseIcon" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="mouseIcon" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_iconCarrier"> 
                     <g clip-path="url(#clip0_429_11035)"> 
                         <path d="M6 9C6 5.68629 8.68629 3 12 3V3C15.3137 3 18 5.68629 18 9V15C18 18.3137 15.3137 21 12 21V21C8.68629 21 6 18.3137 6 15V9Z" stroke="#292929" stroke-width="2.5" stroke-linejoin="round"></path> 
                         <path class="scrollWheel" d="M12 7L12 11" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> 
                     </g>  
                 </g>
-            </svg> -->
+            </svg>
         </article>  
         <article class="sections">
+            <div class="clientWork">
+                <h2>client work</h2>
+            </div>
+            <div class="personalProjects">
+                <h2>personal projects</h2>
+                <ul class="pProjectsSection">
+
+                </ul>
+                <div class="buttons">
+                    <button class="previous">previous</button>
+                    <button class="next">next</button>
+                </div>
+            </div>
+            <div class="about">
+                <h2>about me</h2>
+                <div class="aboutMe">
+                    <div class="paragraphAboutMe">
+                        <p>I am a freelance web designer. I just completed my BA in Digital Arts degree at the University of the Witwatersrand with a focus on web design and game design.</p>
+                        <p>Currently, I am doing work mostly in HTML, CSS, JavaScript and React.js, but I am actively open to learning new things, languages and ways of solving problems.</p>
+                        <p>I am excited to see what the future holds and what adventures will come my way.</p>
+                    </div>
+                    <div class="photoHolder">
+                        <img class="photo" src="../images/main/meProf.jpg" alt="Image of Christine Holt smiling in a red shirt" />
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <h2>let's work together</h2>
+                <section class="workWithMe">
+                    <p>I am dedicated to help you create designs as close to what you need. If you are interested, please feel free to contact me.</p>
+                    <article class="process">
+                        <div class="step">
+                            <h3>1. talk to me</h3>
+                            <p>Let's have a conversation about what you want and need. It is important for me to understand your needs so I can work with you in creating what you need.</p>
+                        </div>
+                        <div class="step">
+                            <h3>2. design</h3>
+                            <p>I will create wireframes and prototypes of your project that you can review and change to your liking. I will not move on until you are satisfied with the designs, so I can make sure the outcome will be to your liking.</p>
+                        </div>
+                        <div class="step">
+                            <h3>3. create</h3>
+                            <p>This is where your project comes to life. I will stay in constant contact with you through this process. It is your project, after all, you should be as involved as possible.</p>
+                        </div>
+                        <div class="step">
+                            <h3>4. reiterate</h3>
+                            <p>There is always room for improvement. After finishing your project, we review it. I want to ensure you are satisfied with the outcome.</p>
+                        </div>
+                    </article>
+                </section>    
+            </div>
         </article>      
     </section>
     <footer>
@@ -68,7 +115,7 @@
         </section> 
         <p>&copy; 2026 Christine Holt. All Rights Reserved.</p>
     </footer>
-    <script type="module" src="scripts/sections.js"></script>
+    <script type="module" src="../scripts/webDev.js"></script>
     <script src="scripts/burgerNavigation.js"></script>
     <script src="scripts/bubbles.js"></script>
 </body>

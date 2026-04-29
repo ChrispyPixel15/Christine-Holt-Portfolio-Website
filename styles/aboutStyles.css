@@ -10,19 +10,6 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    font-family: 'Pally', sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 0.3;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    text-align: center;
-    color: #323232;
-}
-
 h3 {
     font-family: 'Pally', sans-serif;
     font-size: 45px;
@@ -36,7 +23,6 @@ h3 {
 
 .aboutMe {
     display: flex;
-    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -70,7 +56,6 @@ h3 {
 }
 
 .workWithMe {
-    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -80,7 +65,7 @@ h3 {
     font-weight: 500;
     margin-left: auto;
     margin-right: auto;
-}
+} 
 
 .process {
     display: flex;
